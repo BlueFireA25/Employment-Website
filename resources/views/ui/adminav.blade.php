@@ -1,0 +1,2 @@
+<a class="text-white text-sm uppercase font-bold p-3 {{ Request::is('vacancies') ? 'bg-teal-500' : '' }}" href="{{ route('vacancies.index') }}">See vacancies</a>
+<a class="text-white text-sm uppercase font-bold p-3 {{ Request::is('vacancies/create') ? 'bg-teal-500' : '' }}" href="{{ route('vacancies.create') }}">New vacant</a>
