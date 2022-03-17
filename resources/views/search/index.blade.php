@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('navigation')
+    @if (Auth::user())
+        @include('ui.adminav')
+    @endif
+
     @include('ui.categoriesnav')
 @endsection
 
